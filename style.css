@@ -1,0 +1,74 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Vazirmatn, sans-serif;
+  direction: rtl;
+  background: #F5EEFF; /* پاستل بنفش */
+  color: #2E003E;
+}
+
+/* Header */
+header {
+  background: #4A148C;
+  color: white;
+  padding: 25px 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header nav a {
+  color: #EDE7F6;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+header nav a:hover { color: #B39DDB; }
+
+/* Sections */
+section { padding: 35px 20px; max-width: 900px; margin: auto; }
+h2 { color: #4A148C; display: flex; align-items: center; gap: 8px; }
+.icon { width: 22px; height: 22px; vertical-align: middle; transition: 0.3s; }
+.icon:hover { transform: scale(1.2); fill: #7B1FA2; }
+
+/* Fade Animation */
+.fade-section { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+.fade-section.show { opacity: 1; transform: translateY(0); }
+
+/* Tags */
+.tag-container { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+.tag-container span {
+  background: #E1D5F9;
+  color: #4A148C;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.tag-container span:hover { background: #D1B3FF; cursor: pointer; }
+
+/* Lists */
+.list { list-style: none; padding: 0; }
+.list li { background: #F3EFFF; margin-bottom: 10px; padding: 12px; border-radius: 8px; transition: 0.3s; }
+.clickable li:hover { background: #E6D9FF; cursor: pointer; }
+
+/* Certificates */
+.certificate-container { display: flex; flex-wrap: wrap; gap: 10px; }
+.certificate-container img {
+  width: 150px; border-radius: 8px; cursor: pointer; transition: 0.3s;
+}
+.certificate-container img:hover { transform: scale(1.05); }
+
+/* Lightbox */
+.lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.75); justify-content: center; align-items: center; }
+.lightbox img { max-width: 90%; max-height: 90%; border-radius: 10px; }
+
+/* Mobile */
+@media (max-width: 600px) {
+  header h1 { font-size: 22px; }
+  header p { font-size: 14px; }
+  .tag-container span { font-size: 12px; padding: 6px 10px; }
+  .certificate-container img { width: 100px; }
+}
