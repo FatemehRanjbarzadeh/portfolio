@@ -72,3 +72,30 @@ h2 { color: #4A148C; display: flex; align-items: center; gap: 8px; }
   .tag-container span { font-size: 12px; padding: 6px 10px; }
   .certificate-container img { width: 100px; }
 }
+
+/*skill-bar*/
+.skill-bar {
+  margin-bottom: 22px;
+}
+
+.skill-bar span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+  color: #4A148C;
+}
+
+.bar {
+  background: #E1D5F9;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 14px;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #6A1B9A, #9C27B0);
+  border-radius: 20px;
+  transition: width 1.6s ease;
+}
