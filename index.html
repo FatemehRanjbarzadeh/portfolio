@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رزومه فاطمه رنجبرزاده</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>فاطمه رنجبرزاده</h1>
+    <nav>
+        <a href="#about">درباره من</a>
+        <a href="#skills">مهارت‌ها</a>
+        <a href="#projects">پروژه‌ها</a>
+        <a href="#contact">تماس</a>
+        <a href="#certificates">مدارک</a>
+    </nav>
+</header>
+
+<section id="about" class="fade-section">
+    <h2>درباره من</h2>
+    <p>مهندس کامپیوتر با تخصص در طراحی و توسعه نرم‌افزار، تحلیل سیستم‌ها و حل مسائل پیچیده فناوری اطلاعات. علاقه‌مند به پروژه‌های نوآورانه و یادگیری مستمر.</p>
+</section>
+
+<section id="skills" class="fade-section">
+    <h2>مهارت‌ها</h2>
+    <div class="tag-container">
+        <span>Python</span>
+        <span>Java</span>
+        <span>C++</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>SQL</span>
+    </div>
+</section>
+
+<section id="languages" class="fade-section">
+    <h2>زبان‌ها</h2>
+    <div class="tag-container">
+        <span>فارسی</span>
+        <span>انگلیسی</span>
+        <span>ترکی استانبولی</span>
+    </div>
+</section>
+
+<section id="projects" class="fade-section">
+    <h2>پروژه‌ها</h2>
+    <ul class="list clickable">
+        <li>ربات تلگرام با پایتون</li>
+        <li>ربات اینستاگرام با پایتون</li>
+        <li>فرم عضویت کتابخانه با پایتون</li>
+        <li>تحلیل داده‌های تماس با پایتون</li>
+        <li>بازی‌های Hangman و Minesweeper با Java</li>
+        <li>ماشین‌حساب حرفه‌ای با Java MVC</li>
+        <li>تحلیل ژنتیکی داده‌های ژنومی با ++C</li>
+        <li>پیش‌بینی دیابت با یادگیری ماشین در Python</li>
+        <li>فرم رزرو ملاقات دانشجو-استاد با Java</li>
+        <li>وب‌سایت کتابخانه آنلاین با HTML/CSS/JS و C#</li>
+        <li>سیستم مسیریابی و نمایش رستوران‌ها با Python و API</li>
+    </ul>
+</section>
+
+<section id="certificates" class="fade-section">
+    <h2>مدارک و گواهینامه‌ها</h2>
+    <div class="certificate-container">
+        <img src="assets/cert1.jpg" alt="مدرک 1" onclick="openLightbox('assets/cert1.jpg')">
+        <img src="assets/cert2.jpg" alt="مدرک 2" onclick="openLightbox('assets/cert2.jpg')">
+        <img src="assets/cert3.jpg" alt="مدرک 3" onclick="openLightbox('assets/cert3.jpg')">
+    </div>
+</section>
+
+<section id="contact" class="fade-section">
+    <h2>تماس با من</h2>
+    <p>Email: fatemehranjbarzadeh03@gmail.com</p>
+    <p>تلفن: 9109307454</p>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="تصویر مدرک">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
