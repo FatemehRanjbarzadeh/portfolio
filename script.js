@@ -37,3 +37,19 @@ if (skillSection) {
 
   skillObserver.observe(skillSection);
 }
+
+document.querySelectorAll(".stars").forEach(container => {
+  const level = parseInt(container.dataset.level);
+
+  for (let i = 1; i <= 5; i++) {
+    const star = document.createElement("span");
+    star.classList.add("star");
+    star.innerHTML = "★";
+
+    if (i <= level) {
+      star.classList.add("filled");
+    }
+
+    container.appendChild(star);
+  }
+});
